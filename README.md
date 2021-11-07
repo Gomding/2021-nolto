@@ -43,6 +43,13 @@ API의 설계/구축을 담당하고 AWS를 이용해서 인프라를 구축했�
 
 * OAuth2.0을 활용한 Google, Github 로그인 기능에서 다른 소셜 로그인도 유연하게 추가하는 설계를 원했습니다. 소셜 로그인쪽은 infrastructure 계층의 책임이라 생각해 소셜 로그인 추가는 infrastructure 계층에서만 추가,변경이 일어나면 되는 구조를 설계하기 위해 노력했습니다. 그 과정에서 계층을 나누는 것도 중요하지만 URL /login/oauth/{socialType}의 Pathvariable에 따라 적절한 구현체를 찾아주는것에 대해 고민했습니다. 해당 구현체들을 빈으로 등록하고 적절한 구현체를 반환해주는 Provider클래스를 만들어서 SocialType과 Oauth구현체를 매핑해주는 방식으로 해결했습니다. 추상화를 시키는 것으로 계층을 나눠주면 기능 추가를 유연하게 할 수 있고 변경점을 최소화할 수 있다는걸 이론이 아닌 몸으로 느낄 수 있었습니다.
 
+### 인프라
+![image](https://user-images.githubusercontent.com/57378410/140643445-d806da99-3625-42a5-b155-71f811f12c10.png)
+
+### CI/CD 프로세스
+![image](https://user-images.githubusercontent.com/57378410/140643447-85f964a4-f4ff-4200-8f05-452b14ad069c.png)
+
+
 ---
 
 <p align="center">  
