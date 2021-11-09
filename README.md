@@ -18,6 +18,15 @@ API의 설계/구축을 담당하고 AWS를 이용해서 인프라를 구축했�
 ### 문서화 도구
 - Spring Restdocs
 
+### 엔티티 연관관계
+<img src="https://user-images.githubusercontent.com/57378410/140917450-3e67a3e4-4d0a-4cfa-a281-6547144eba23.png" alt="erd" width="85%" height="85%"/>
+
+### 인프라
+![image](https://user-images.githubusercontent.com/57378410/140643445-d806da99-3625-42a5-b155-71f811f12c10.png)
+
+### CI/CD 프로세스
+![image](https://user-images.githubusercontent.com/57378410/140643447-85f964a4-f4ff-4200-8f05-452b14ad069c.png)
+
 ### 개발 방식
 매일 아침 10시 데일리 미팅에서 자신의 상태와 어제 했던 작업을 공유합니다. 작업 분배가 안된 상태면 오전시간에 작업을 분배하고 기한을 정합니다. 완료한 작업은 PR을 생성하여 코드리뷰를 받습니다. 기간이 끝나면 함께 모여서 작업에 대해 간단하게 설명하고 Develop 브랜치에 Merge합니다.
 
@@ -95,12 +104,6 @@ cascade, orphanRemoval을 잘 이해하기위해 제일 먼저 시작한 것은 
 
 ### 아쉬운 점
 현재는 댓글삭제 시 대댓글까지 모두 물리적 삭제를 진행합니다. 하지만 다른사람의 삭제에 의해서 나의 대댓글이 지워지는건 사용자에게 아쉬운 경험을 줄거라 생각합니다. 따라서 댓글 삭제기능에 논리 삭제를 구현해서 댓글이 삭제되더라도 대댓글은 계속 볼 수 있도록 구현하고 싶습니다. 토이프로젝트 피드 삭제도 마찬가지로요! 누군가에겐 피드에 달았던 피드백 댓글이 큰 뿌듯함일 수 있다고 생각합니다.
-
-### 인프라
-![image](https://user-images.githubusercontent.com/57378410/140643445-d806da99-3625-42a5-b155-71f811f12c10.png)
-
-### CI/CD 프로세스
-![image](https://user-images.githubusercontent.com/57378410/140643447-85f964a4-f4ff-4200-8f05-452b14ad069c.png)
 
 
 ---
