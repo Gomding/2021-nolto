@@ -171,6 +171,7 @@ WebP, WebM 같은 경우 지원하지 않는 브라우저가 있어서 제외, �
   -  [FFmpeg로 gif파일 mp4로 변환하기 - 1](https://parkadd.tistory.com/122)
   -  [FFmpeg로 gif파일 mp4로 변환하기 - 2](https://parkadd.tistory.com/126)
 
+---
 
 ## 🚀 문제 해결 사례 <a id="문제해결사례"></a>
 [목차로 돌아가기](#목차)
